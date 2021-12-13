@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORTAFOLIO - GABRIELA LANZA</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<header class="header-area">
+    <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+	<img src="img/GLlogo-01.png" alt="logo" style="width: 230px; height: 50px; padding-left: 55px;">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ms-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Acerca de mí</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="services.html">Servicios</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="portafolio.html">Portafolio</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+</header>
+
+<!-- Intro Section -->
+<section id="intro" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+				<img src="img/IMG_7219.jpg" alt="" style="width: 270px; height: 350px; border-radius: 80px; margin-left: 920px; position:absolute; top: 170px;">
+                <h1>¡Bienvenidos!</h1>
+                <p>Hola, mi nombre es Gabriela Lanza y es un gusto tenerte por aquí. 
+					<br> Te quiero contar un poquito sobre mí... Actualmente tengo 21 años, y estudio Comunicación Audiovisual.
+					<br> Soy alguien muy 'fan' de la vida; me apasiona descubrir, vivir y disfrutar lo más que se pueda. 
+					<br> Me encantan los atardeceres, la lluvia, el café, las conversaciones profundas, las flores, los aviones, <br> los colores, los gatos, la música, entre mil cosas más. 
+					<br> ¡Gracias por estar aquí!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+	<div class="container">
+		<p><strong>Copyright © All rights reserved.</strong>
+		<br> Gabriela Lanza</p> 
+	</div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script>
+	$(function() {
+
+		
+		$('#navbar').onePageNav({
+			currentClass: 'active',
+			scrollSpeed: 1000,
+			easing: 'swing'
+		});
+		
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() > 48) {
+				$('.header-area').addClass('sticky');
+			} else {
+				$('.header-area').removeClass('sticky');
+			}
+        });
+
+	});
+</script>
+</body>
+
+</html>
